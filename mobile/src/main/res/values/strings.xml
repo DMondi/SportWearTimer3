@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">SportWearTimer3</string>
+    <string name="action_show_timer">Open Timer</string>
+    <string name="button_ok">OK</string>
+    <string name="button_pause">Pause</string>
+    <string name="button_resume">Resume</string>
+    <string name="button_start">Start</string>
+    <string name="default_pause" translatable="false">00:00:00</string>
+    <string name="default_repeat">0 times</string>
+    <string name="default_timer" translatable="false">00:00:00</string>
+    <string name="edit_timer_running">Timer ist running.</string>
+    <string name="label_pause">Pause</string>
+    <string name="label_repeat">Repeat</string>
+    <string name="label_repeat_infitity">∞ times</string>
+    <string name="n_text_finished">Timer finished.</string>
+    <string name="n_text_infinity">Timer elapsed. ∞ repeats remaining.</string>
+    <string name="n_text_pause_finished">Break finished!</string>
+    <string name="option_off">Off</string>
+    <string name="option_on">On</string>
+    <string name="timer_start_error">Main timer is invalid.</string>
+    <string name="timeFormatString" translatable="false">%02d</string>
+    <string name="fullTimeFormatString" translatable="false">%02d:%02d:%02d</string>
+    <string name="symbol_plus">+</string>
+    <string name="symbol_0">0</string>
+    <string name="symbol_minus">-</string>
+    <string name="symbol_dots">:</string>
+    <string name="symbol_00">00</string>
 </resources>

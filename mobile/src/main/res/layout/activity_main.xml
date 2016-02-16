@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,6 +7,169 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/background"
     tools:context="com.dmytro.ponomarev.sportweartimer3.MainActivity">
 
-</RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_step">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="top">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="3dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:textColor="@color/timer_text"
+                    android:gravity="center"
+                    android:id="@+id/counter_main"
+                    android:background="@drawable/text_background"
+                    android:paddingLeft="8dp" android:paddingTop="2dp" android:paddingRight="8dp" android:paddingBottom="2dp"
+                    android:layout_margin="3dp"
+                    android:text="@string/default_timer"/>
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="3dp">
+
+                    <TextView
+                        android:textColor="@color/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_pause"
+                        android:layout_weight="5.0" />
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:textColor="@color/timer_text"
+                        android:gravity="center_vertical"
+                        android:id="@+id/counter_pause"
+                        android:background="@drawable/text_background"
+                        android:paddingRight="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/default_pause"
+                        android:layout_weight="1.0"
+                        android:paddingStart="2dp" />
+
+                    <TextView
+                        android:id="@+id/pause_onoff"
+                        android:background="@color/option_on_background"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/option_on"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="3dp">
+
+                    <TextView
+                        android:textColor="@color/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_repeat"
+                        android:layout_weight="5.0" />
+                    <TextView
+                        android:textSize="18sp"
+                        android:textColor="@color/timer_text_inactive"
+                        android:gravity="bottom"
+                        android:id="@+id/repeat"
+                        android:background="@drawable/text_background"
+                        android:paddingRight="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/default_repeat"
+                        android:layout_weight="1.0"
+                        android:paddingStart="2dp" />
+                    <TextView
+                        android:id="@+id/repeat_onoff"
+                        android:background="@color/option_off_background"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:layout_width="35dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/option_off"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/timercontrol_start"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="top">
+
+                <Button
+                    android:textColor="@color/text"
+                    android:layout_gravity="fill"
+                    android:id="@+id/button_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_start"
+                    android:background="@color/black"
+                    android:backgroundTint="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout android:orientation="horizontal"
+                android:id="@+id/timercontrol_stop"
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="top">
+
+                <ImageView
+                    android:id="@+id/button_stop"
+                    android:background="@color/black"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="1dp"
+                    android:src="@drawable/backup_restore"
+                    android:layout_weight="3.0"
+                    android:backgroundTint="@color/black" />
+
+                <Button
+                    android:textColor="@color/text"
+                    android:layout_gravity="center"
+                    android:id="@+id/button_pause_resume"
+                    android:background="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_pause"
+                    android:layout_weight="2.0"
+                    android:backgroundTint="@color/black" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>
