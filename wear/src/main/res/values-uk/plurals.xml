@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="label_repeat">
+        <item quantity="other">%d раз</item>
+        <item quantity="one">%d раз</item>
+    </plurals>
+    <plurals name="n_text">
+        <item quantity="other">Коло пройдене. %s повторів лишилось.</item>
+        <item quantity="one">Останнє коло!. %s лишився.</item>
+    </plurals>
+    <plurals name="settings_repeat">
+        <item quantity="other">раз</item>
+        <item quantity="one">раз</item>
+    </plurals>
+</resources>

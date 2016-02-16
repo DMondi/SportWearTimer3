@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.wearable.view.BoxInsetLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+                    <TextView
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text"
+                        android:id="@+id/timer_hours_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/symbol_plus"
+                        android:gravity="center_horizontal" />
+
+                    <TextView
+                        android:textSize="30sp"
+                        android:textColor="@color/timer_text"
+                        android:layout_gravity="left"
+                        android:id="@+id/timer_hours"
+                        android:background="@color/timer_background"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/symbol_00" />
+
+                    <TextView
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text"
+                        android:id="@+id/timer_hours_down"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/symbol_minus"
+                        android:gravity="center_horizontal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:textSize="30sp"
+                        android:textColor="@color/text"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="@string/symbol_dots" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text"
+                        android:id="@+id/timer_minutes_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/symbol_plus"
+                        android:gravity="center_horizontal" />
+                    <TextView
+                        android:textSize="30sp"
+                        android:textColor="@color/timer_text"
+                        android:layout_gravity="left"
+                        android:id="@+id/timer_minutes"
+                        android:background="@color/timer_background"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/symbol_00" />
+
+                    <TextView
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text"
+                        android:id="@+id/timer_minutes_down"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/symbol_minus"
+                        android:gravity="center_horizontal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="left"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp">
+
+                    <TextView
+                        android:textSize="30sp"
+                        android:textColor="@color/text"
+                        android:gravity="left"
+                        android:layout_gravity="left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/symbol_dots" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text"
+                        android:gravity="center_horizontal"
+                        android:id="@+id/timer_seconds_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/symbol_plus" />
+                    <TextView
+                        android:textSize="30sp"
+                        android:textColor="@color/timer_text"
+                        android:gravity="left"
+                        android:layout_gravity="left"
+                        android:id="@+id/timer_seconds"
+                        android:background="@color/timer_background"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/symbol_00" />
+
+                    <TextView
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text"
+                        android:id="@+id/timer_seconds_down"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/symbol_minus"
+                        android:gravity="center_horizontal" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:textColor="@color/text"
+                android:id="@+id/button_ok"
+                android:background="@drawable/button_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/button_ok" />
+        </LinearLayout>
+    </FrameLayout>
+
+</android.support.wearable.view.BoxInsetLayout>

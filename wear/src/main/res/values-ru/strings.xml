@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SportWearTimer3</string>
+    <string name="action_show_timer">Открыть Таймер</string>
+    <string name="button_ok">ОК</string>
+    <string name="button_pause">Пауза</string>
+    <string name="button_resume">Возобновить</string>
+    <string name="button_start">Пуск!</string>
+    <string name="default_repeat">0 раз</string>
+    <string name="edit_timer_running">Запущен таймер</string>
+    <string name="label_pause">Пауза</string>
+    <string name="label_repeat">Повтор</string>
+    <string name="label_repeat_infitity">∞ раз</string>
+    <string name="n_text_finished">Время вышло</string>
+    <string name="n_text_infinity">Повторный запуск. ∞ повторов осталось.</string>
+    <string name="n_text_pause_finished">Перерыв окончен!</string>
+    <string name="option_off">Выкл</string>
+    <string name="option_on">Вкл</string>
+    <string name="timer_start_error">Ошибка! :(</string>
+    <string name="symbol_plus">+</string>
+    <string name="symbol_0">0</string>
+    <string name="symbol_minus">-</string>
+    <string name="symbol_dots">:</string>
+    <string name="symbol_00">00</string>
+</resources>

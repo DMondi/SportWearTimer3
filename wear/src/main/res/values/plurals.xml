@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="label_repeat">
+        <item quantity="other">%d times</item>
+        <item quantity="one">%d time</item>
+    </plurals>
+    <plurals name="n_text">
+        <item quantity="other">Timer elapsed. %s repeats remaining.</item>
+        <item quantity="one">Timer elapsed. %s repeat remaining.</item>
+    </plurals>
+    <plurals name="settings_repeat">
+        <item quantity="other">times</item>
+        <item quantity="one">time</item>
+    </plurals>
+
+</resources>
